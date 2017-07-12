@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>sc.fiji</groupId>
+        <artifactId>pom-fiji</artifactId>
+		<version>21.3.0</version>
+	</parent>
+
+	<groupId>BIIS.mpi-cbg</groupId>
+	<artifactId>Manual_Drift_Correction</artifactId>
+	<version>1.0.0</version>
+
+	<name>Manual_Registration.jar</name>
+	
+	
+	<description>
+		A Manual registration tool
+	</description>
+
+	<dependencies>
+	
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>sc.fiji</groupId>
+			<artifactId>fiji-lib</artifactId>
+		</dependency>
+		<dependency>
+  			<groupId>sc.fiji</groupId>
+  			<artifactId>Fiji_Plugins</artifactId>
+		</dependency>
+		<dependency>
+                <groupId>mpicbg</groupId>
+                <artifactId>mpicbg</artifactId>
+                <version>${mpicbg.version}</version>
+        </dependency>
+        <dependency>
+        	<groupId>mpicbg</groupId>
+        	<artifactId>mpicbg_</artifactId>
+        	<version>${mpicbg.version}</version>
+        </dependency>
+	</dependencies>
+
+
+	<developers>
+		<developer>
+			<id>developer_id</id>
+			<name> Benoit </name>
+			<email>ipf(A_T)mpi-cbg.de</email>
+			<organization>MPI-CBG</organization>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+	</developers>
+
+	<repositories>
+		<!-- NB: for project parent -->
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	
+</project>
