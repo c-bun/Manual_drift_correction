@@ -245,7 +245,7 @@ public class Manual_Registration implements PlugIn {
 			*/
 
 			// get the current time point as the reference frame
-			int ref_t =(int)(imp.getCurrentSlice()/slice_per_frame)+1;
+			int ref_t = (int) Math.ceil((double)imp.getCurrentSlice()/slice_per_frame);
 			IJ.log("reference frame : " + ref_t);
 			ArrayList<Point> ref_points = Landmark_list.get(ref_t-1);
 			
