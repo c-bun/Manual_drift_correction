@@ -35,6 +35,7 @@ import ij.process.ImageProcessor;
 import ij.plugin.frame.RoiManager;
 import ij.gui.Roi;
 import ij.gui.Line;
+import ij.gui.PointRoi;
 import ij.gui.PolygonRoi;
 import ij.CompositeImage;
 import ij.ImageStack;
@@ -92,6 +93,13 @@ public class Manual_Registration implements PlugIn {
 	    		return;
 			}
 			Roi[] rois = manager.getRoisAsArray();
+			if (rois.length == 1 && rois[0] instanceof PointRoi) {
+				PointRoi pointRoi = (PointRoi) rois[0];
+				if (pointRoi.getCount(0) > 1) {
+					IJ.showMessage("Multi-point selections only supported if one selection per frame");
+					return;
+				}
+			}
 
 			ArrayList<ArrayList<Point>> keyLandmark_list = new ArrayList<ArrayList<Point>>();
 			ArrayList<Integer> keyFrame_list = new ArrayList<Integer>();
