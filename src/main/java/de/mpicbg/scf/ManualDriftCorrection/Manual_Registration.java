@@ -135,7 +135,7 @@ public class Manual_Registration implements PlugIn {
 	        		points.add(p);
 	        		keyLandmark_list.add(points);	        		
 	        	}
-	            else if(roi.getType() == Roi.POINT |  roi.getType() == Roi.POLYLINE)
+	            else if(roi.getType() == Roi.POINT || roi.getType() == Roi.POLYLINE)
 	        	{
 	        		PolygonRoi roi2 = (PolygonRoi) roi;
 	        		int npoints  = roi2.getNCoordinates();
