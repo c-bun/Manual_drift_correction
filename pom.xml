@@ -1,74 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 		http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>sc.fiji</groupId>
-        <artifactId>pom-fiji</artifactId>
-		<version>21.3.0</version>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>16.2.0</version>
+		<relativePath />
 	</parent>
 
-	<groupId>BIIS.mpi-cbg</groupId>
+	<groupId>mpicbg</groupId>
 	<artifactId>Manual_Drift_Correction</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 
-	<name>Manual_Registration.jar</name>
-	
-	
-	<description>
-		A Manual registration tool
-	</description>
+	<name>Manual Drift Correction</name>
+	<description>A manual registration tool</description>
+	<url>https://imagej.net/Manual_drift_correction_plugin/</url>
+	<inceptionYear>2016</inceptionYear>
+	<organization>
+		<name>Scientific Computing Facility @ MPI-CBG</name>
+		<url>https://www.mpi-cbg.de/en/services-facilities/core-facilities/scientific-computing-facility/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>BSD 3-clause</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
 	<dependencies>
-	
 		<dependency>
 			<groupId>net.imagej</groupId>
 			<artifactId>ij</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>sc.fiji</groupId>
-			<artifactId>fiji-lib</artifactId>
+			<groupId>mpicbg</groupId>
+			<artifactId>mpicbg</artifactId>
 		</dependency>
-		<dependency>
-  			<groupId>sc.fiji</groupId>
-  			<artifactId>Fiji_Plugins</artifactId>
-		</dependency>
-		<dependency>
-                <groupId>mpicbg</groupId>
-                <artifactId>mpicbg</artifactId>
-                <version>${mpicbg.version}</version>
-        </dependency>
-        <dependency>
-        	<groupId>mpicbg</groupId>
-        	<artifactId>mpicbg_</artifactId>
-        	<version>${mpicbg.version}</version>
-        </dependency>
 	</dependencies>
-
 
 	<developers>
 		<developer>
-			<id>developer_id</id>
-			<name> Benoit </name>
-			<email>ipf(A_T)mpi-cbg.de</email>
-			<organization>MPI-CBG</organization>
+			<id>benoitlo</id>
+			<name>Benoit Lombardot</name>
+			<url>http://imagej.net/User:Benoit</url>
 			<roles>
+				<role>founder</role>
+				<role>lead</role>
 				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
 			</roles>
-			<timezone>+1</timezone>
 		</developer>
 	</developers>
 
+	<contributors>
+		<contributor>
+			<name>Stefan Helfrich</name>
+			<url>http://imagej.net/User:Stelfrich</url>
+			<properties><id>stelfrich</id></properties>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>ImageJ Forum</name>
+			<archive>http://forum.imagej.net/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/mpicbg-scicomp/Manual_drift_correction</connection>
+		<developerConnection>scm:git:git@github.com:mpicbg-scicomp/Manual_drift_correction</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/mpicbg-scicomp/Manual_drift_correction</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/mpicbg-scicomp/Manual_drift_correction/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+
+	<properties>
+		<package-name>de.mpicbg.scf.ManualDriftCorrection</package-name>
+		<main-class>de.mpicbg.scf.ManualDriftCorrection.Manual_Registration</main-class>
+		<license.licenseName>bsd_3</license.licenseName>
+		<license.copyrightOwners>Max Planck Institute of Molecular Cell Biology and Genetics, Dresden, Germany</license.copyrightOwners>
+	</properties>
+
 	<repositories>
-		<!-- NB: for project parent -->
 		<repository>
 			<id>imagej.public</id>
-			<url>http://maven.imagej.net/content/groups/public</url>
+			<url>https://maven.imagej.net/content/groups/public</url>
 		</repository>
 	</repositories>
-
-	
 </project>
