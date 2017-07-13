@@ -23,6 +23,12 @@
 		<name>Scientific Computing Facility @ MPI-CBG</name>
 		<url>https://www.mpi-cbg.de/en/services-facilities/core-facilities/scientific-computing-facility/</url>
 	</organization>
+	<licenses>
+		<license>
+			<name>BSD 3-clause</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
 	<dependencies>
 		<dependency>
@@ -59,6 +65,34 @@
 			<properties><id>stelfrich</id></properties>
 		</contributor>
 	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>ImageJ Forum</name>
+			<archive>http://forum.imagej.net/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/mpicbg-scicomp/Manual_drift_correction</connection>
+		<developerConnection>scm:git:git@github.com:mpicbg-scicomp/Manual_drift_correction</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/mpicbg-scicomp/Manual_drift_correction</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/mpicbg-scicomp/Manual_drift_correction/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+
+	<properties>
+		<package-name>de.mpicbg.scf.ManualDriftCorrection</package-name>
+		<main-class>de.mpicbg.scf.ManualDriftCorrection.Manual_Registration</main-class>
+		<license.licenseName>bsd_3</license.licenseName>
+		<license.copyrightOwners>Max Planck Institute of Molecular Cell Biology and Genetics, Dresden, Germany</license.copyrightOwners>
+	</properties>
 
 	<repositories>
 		<repository>
