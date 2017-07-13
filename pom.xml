@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 		http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
 		<groupId>sc.fiji</groupId>
-        <artifactId>pom-fiji</artifactId>
+		<artifactId>pom-fiji</artifactId>
 		<version>21.3.0</version>
 	</parent>
 
@@ -16,14 +15,12 @@
 	<version>1.0.1-SNAPSHOT</version>
 
 	<name>Manual_Registration.jar</name>
-	
-	
+
 	<description>
 		A Manual registration tool
 	</description>
 
 	<dependencies>
-	
 		<dependency>
 			<groupId>net.imagej</groupId>
 			<artifactId>ij</artifactId>
@@ -33,21 +30,20 @@
 			<artifactId>fiji-lib</artifactId>
 		</dependency>
 		<dependency>
-  			<groupId>sc.fiji</groupId>
-  			<artifactId>Fiji_Plugins</artifactId>
+			<groupId>sc.fiji</groupId>
+			<artifactId>Fiji_Plugins</artifactId>
 		</dependency>
 		<dependency>
-                <groupId>mpicbg</groupId>
-                <artifactId>mpicbg</artifactId>
-                <version>${mpicbg.version}</version>
-        </dependency>
-        <dependency>
-        	<groupId>mpicbg</groupId>
-        	<artifactId>mpicbg_</artifactId>
-        	<version>${mpicbg.version}</version>
-        </dependency>
+			<groupId>mpicbg</groupId>
+			<artifactId>mpicbg</artifactId>
+			<version>${mpicbg.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>mpicbg</groupId>
+			<artifactId>mpicbg_</artifactId>
+			<version>${mpicbg.version}</version>
+		</dependency>
 	</dependencies>
-
 
 	<developers>
 		<developer>
@@ -69,6 +65,4 @@
 			<url>http://maven.imagej.net/content/groups/public</url>
 		</repository>
 	</repositories>
-
-	
 </project>
