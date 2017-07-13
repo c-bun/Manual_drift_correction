@@ -13,7 +13,7 @@
 
 	<groupId>BIIS.mpi-cbg</groupId>
 	<artifactId>Manual_Drift_Correction</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 
 	<name>Manual_Registration.jar</name>
 	
