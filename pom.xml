@@ -11,7 +11,7 @@
 		<relativePath />
 	</parent>
 
-	<groupId>BIIS.mpi-cbg</groupId>
+	<groupId>mpicbg</groupId>
 	<artifactId>Manual_Drift_Correction</artifactId>
 	<version>1.0.1-SNAPSHOT</version>
 
