@@ -33,16 +33,28 @@
 
 	<developers>
 		<developer>
-			<id>developer_id</id>
-			<name> Benoit </name>
-			<email>ipf(A_T)mpi-cbg.de</email>
-			<organization>MPI-CBG</organization>
+			<id>benoitlo</id>
+			<name>Benoit Lombardot</name>
+			<url>http://imagej.net/User:Benoit</url>
 			<roles>
+				<role>founder</role>
+				<role>lead</role>
 				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
 			</roles>
-			<timezone>+1</timezone>
 		</developer>
 	</developers>
+
+	<contributors>
+		<contributor>
+			<name>Stefan Helfrich</name>
+			<url>http://imagej.net/User:Stelfrich</url>
+			<properties><id>stelfrich</id></properties>
+		</contributor>
+	</contributors>
 
 	<repositories>
 		<!-- NB: for project parent -->
